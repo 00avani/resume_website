@@ -30,7 +30,7 @@ Also,Checking that the profile picture displays, text is readable, and the layou
 
 Usage
 
-Viewing: Accessed the live site at https://your-username.github.io/your-repository-name.
+Viewing: Accessed the live site at https://00avani.github.io/resume_website/.
 Edited Content:
 Updated index.html to modify text (e.g., About Me, Education).
 Replaced avani-profile.png with a new image (recommended: 250x250px, PNG format).
