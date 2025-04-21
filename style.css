@@ -1,0 +1,173 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdf6e3;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #004080;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #004080;
+    font-size: 1.2rem;
+}
+
+form {
+    background-color: #f9f4e8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #0b1c39;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08152d;
+}
+
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #fdf6e3, #f7efe2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0b1c39;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    margin: 20px auto;
+    display: block;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #0b1c39;
+}
+
+.hero h1 span {
+    color: #4e70d3;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Education and Achievements Styling */
+section#education ul li strong,
+section#achievements ul li strong {
+    font-size: 1.2rem;
+    color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p, li {
+        font-size: 1rem;
+    }
+}
